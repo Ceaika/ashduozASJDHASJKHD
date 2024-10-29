@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alabalportocala</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="header-image">
+            <img src="flag.png" alt="Your Image">
+        </div>
+        <div class="header-content">
+            <h1>Moldova</h1>
+            <p>"Pe un picior de plai, pe o gura de rai..."</p>
+        </div>
+    </header>
+    
+
+   
+<nav>
+    <button class="nav-button" onclick="showSection(0)">Despre</button>
+    <button class="nav-button" onclick="showSection(1)">Economie</button>
+    <button class="nav-button" onclick="showSection(2)">Guvern</button>
+    <!-- DACA NU VREI VIDEO STERGE BUTTON CLASSU DE JOS-->
+    <button class="nav-button" onclick="showSection(3)">Cultura</button>
+</nav>
+
+
+    <section id="despre" class="content-section">
+        <button class="close-button" onclick="closeSection()">×</button>
+        <h2>Despre</h2>
+        <p>"Moldova este o țară mică situată în Europa de Est, între România și Ucraina. Capitala sa este Chișinău, iar limba oficială este româna. Moldova are o istorie bogată și este cunoscută pentru peisajele sale pitorești și vinurile de calitate.".</p>
+    </section>
+    
+    <section id="economie" class="content-section">
+        <button class="close-button" onclick="closeSection()">×</button>
+        <h2>Economie</h2>
+        <ul>
+            <li>"Agricultură dominantă – Agricultura este principalul sector economic, cu vinul și fructele fiind produse de export esențiale.</li>
+            <li>Dependența de remitențe – O mare parte a veniturilor provine de la cetățenii moldoveni care lucrează în străinătate și trimit bani acasă.</li>
+            <li>Provocări economice – Economia se confruntă cu investiții externe scăzute și infrastructură limitată, afectând dezvoltarea.</li>
+        </ul>
+    </section>
+    
+    <section id="guvern" class="content-section">
+        <button class="close-button" onclick="closeSection()">×</button>
+        <h2>Guvern</h2>
+        <p>"Moldova este o republică parlamentară, unde puterea executivă este împărțită între președinte și guvern. Parlamentul unicameral este ales prin vot popular și are un rol important în formularea politicilor. În ultimii ani, Moldova a avut o direcție pro-europeană în guvernare, însă se confruntă și cu provocări politice interne și influențe externe."</p>
+    </section>
+
+
+    <!-- STERGE HUINEAUA DE JOS DACA NU VREI MOLDTELECOM PRICOL-->
+
+    <section id="video-section" class="content-section">
+    <button class="close-button" onclick="closeSection()">×</button>
+    <h2>Cultura si Traditia Moldoveneasca</h2>
+    <video id="videoPlayer" controls>
+        <source src="moldova_video.mp4" type="video/mp4">
+            nuti merge mai pe short
+    </video>
+</section>
+
+
+    
+
+
+    <footer>
+        <p>&copy; 2024 Todoroscean Diana - Proiect personal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
